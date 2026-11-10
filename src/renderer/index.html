@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' absfile:; img-src 'self' absfile: data:; media-src 'self' absfile:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' absfile:" />
+  <title>Acre Content Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside id="side">
+    <div class="brand">
+      <div class="logo">▣</div>
+      <div><div class="bt">Acre Content Studio</div><div class="bs">AI · Blender · Shorts</div></div>
+    </div>
+    <nav id="nav">
+      <button data-tab="dashboard"><span class="i">◧</span>Dashboard</button>
+      <button data-tab="overseer"><span class="i">✦</span>Overseer</button>
+      <button data-tab="ideas"><span class="i">✧</span>Idea Maker</button>
+      <button data-tab="episodes"><span class="i">▤</span>Episodes</button>
+      <button data-tab="studio"><span class="i">✎</span>Studio</button>
+      <button data-tab="characters"><span class="i">☺</span>Characters</button>
+      <button data-tab="blender"><span class="i">◈</span>Blender</button>
+      <button data-tab="automations"><span class="i">↻</span>Automations</button>
+      <button data-tab="engines"><span class="i">⚙</span>AI Engines</button>
+      <button data-tab="settings"><span class="i">☰</span>Settings</button>
+    </nav>
+    <div id="jobpill" class="jobpill idle">Queue idle</div>
+  </aside>
+  <main id="main">
+    <section class="pane" id="pane-dashboard"></section>
+    <section class="pane" id="pane-overseer"></section>
+    <section class="pane" id="pane-ideas"></section>
+    <section class="pane" id="pane-episodes"></section>
+    <section class="pane" id="pane-studio"></section>
+    <section class="pane" id="pane-characters"></section>
+    <section class="pane" id="pane-blender"></section>
+    <section class="pane" id="pane-automations"></section>
+    <section class="pane" id="pane-engines"></section>
+    <section class="pane" id="pane-settings"></section>
+  </main>
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

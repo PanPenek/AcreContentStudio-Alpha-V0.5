@@ -1,0 +1,286 @@
+{
+  "id": "ep01_cat_body_language",
+  "title": "What your cat is REALLY saying",
+  "topic": "Cat body language toward humans: slow blink, tail up, head bunting, kneading, belly up, ears back.",
+  "format": "host_explainer",
+  "characters": {
+    "host": "astolfo_like"
+  },
+  "props": [
+    "cat"
+  ],
+  "cat_palette": "orange",
+  "set": "cozy_room",
+  "voice": {
+    "narrator": "en-US-AvaNeural",
+    "rate": "+4%",
+    "pitch": "+12Hz"
+  },
+  "music": {
+    "bpm": 104,
+    "seed": 7,
+    "key": 62,
+    "volume": 1.0
+  },
+  "render": {
+    "res": "540x960",
+    "samples": 8
+  },
+  "sources": [
+    "Humphrey et al. 2020, Scientific Reports 10:16503 - slow blinking (eye narrowing) in cat-human communication",
+    "Cat tail-up signal as affiliative greeting: Cafazzo & Natoli 2009, Behavioural Processes"
+  ],
+  "beats": [
+    {
+      "text": "Hi hi! Your cat is talking to you all day long.",
+      "shot": "wide",
+      "title": "WHAT YOUR CAT IS REALLY SAYING",
+      "host": {
+        "pose": "wave",
+        "face": "happy",
+        "look": "camera"
+      },
+      "cat": {
+        "action": "sit",
+        "at": "bench_mid",
+        "face": "camera"
+      },
+      "sfx": [
+        [
+          "meow_short",
+          1.2
+        ]
+      ]
+    },
+    {
+      "text": "You just don't speak cat yet. So let's fix that!",
+      "shot": "host",
+      "host": {
+        "pose": "explain",
+        "face": "fang_grin"
+      }
+    },
+    {
+      "text": "Lesson one. The slow blink. When your cat looks at you, and closes its eyes, really, really slowly...",
+      "shots": [
+        "card",
+        "cat"
+      ],
+      "card": "SLOW BLINK",
+      "cat": {
+        "action": "slow_blink",
+        "face": "camera"
+      },
+      "host": {
+        "pose": "idle",
+        "face": "smile",
+        "look": "cat"
+      }
+    },
+    {
+      "text": "that's a cat kiss. It means: I trust you.",
+      "shot": "host",
+      "label": "= I TRUST YOU",
+      "host": {
+        "pose": "hands_together",
+        "face": "slow_blink",
+        "look": "camera"
+      },
+      "sfx": [
+        [
+          "heart",
+          0.6
+        ]
+      ]
+    },
+    {
+      "text": "Scientists tested this. Cats blinked back more, and even walked up to strangers who slow blinked first!",
+      "shot": "two",
+      "label": "STUDY: SUSSEX 2020",
+      "host": {
+        "pose": "point_right",
+        "face": "smile",
+        "look": "cat"
+      },
+      "cat": {
+        "action": "slow_blink",
+        "face": "host"
+      }
+    },
+    {
+      "text": "Lesson two. A tail pointing straight up, with a little hook at the tip? That's a happy hello!",
+      "shots": [
+        "wide",
+        "two"
+      ],
+      "card": "TAIL UP",
+      "label": "TAIL UP = HELLO!",
+      "host": {
+        "pose": "idle",
+        "face": "happy",
+        "look": "cat"
+      },
+      "cat": {
+        "action": "walk",
+        "at": "bench_right",
+        "to": "bench_edge",
+        "speed": 0.3
+      },
+      "sfx": [
+        [
+          "trill",
+          2.4
+        ]
+      ]
+    },
+    {
+      "text": "And the head bonk? Your cat is rubbing its scent on you. Translation: this human is mine.",
+      "shot": "two",
+      "label": "SCENT MARK = MINE!",
+      "host": {
+        "pose": "pet_front",
+        "face": "soft",
+        "look": 88
+      },
+      "cat": {
+        "action": "headbutt",
+        "face": "host"
+      },
+      "sfx": [
+        [
+          "purr",
+          0.8
+        ]
+      ]
+    },
+    {
+      "text": "Lesson three. Kneading, or making biscuits. Kittens knead for milk, so it means: I feel safe and comfy.",
+      "shots": [
+        "card",
+        "cat"
+      ],
+      "card": "KNEADING",
+      "label": "= SAFE & COMFY",
+      "host": {
+        "pose": "idle",
+        "face": "smile",
+        "look": "cat"
+      },
+      "cat": {
+        "action": "knead",
+        "at": "bench_mid",
+        "face": "camera"
+      },
+      "sfx": [
+        [
+          "purr",
+          2.5
+        ]
+      ]
+    },
+    {
+      "text": "Showing the belly means big trust...",
+      "shot": "card",
+      "card": "BELLY UP",
+      "cat": {
+        "action": "belly_up",
+        "face": -15
+      }
+    },
+    {
+      "text": "but it's usually not an invitation! Rub it, and you might get the bunny kicks!",
+      "shots": [
+        "cat",
+        "host"
+      ],
+      "label": "TRUST, NOT A RUB INVITE",
+      "cat": {
+        "action": "belly_trap",
+        "trap_at": 1.4,
+        "face": -15
+      },
+      "host": {
+        "pose": "surprised",
+        "face": "surprised",
+        "look": "cat"
+      },
+      "sfx": [
+        [
+          "bonk",
+          1.6
+        ],
+        [
+          "hiss",
+          1.9
+        ]
+      ]
+    },
+    {
+      "text": "Ears flat, and a tail lashing side to side? That means: back off. Give your kitty some space.",
+      "shots": [
+        "card",
+        "wide"
+      ],
+      "card": "EARS BACK",
+      "label": "= BACK OFF, PLEASE",
+      "cat": {
+        "action": "ears_back",
+        "face": -15
+      },
+      "host": {
+        "pose": "think",
+        "face": "thinking",
+        "look": "cat"
+      },
+      "sfx": [
+        [
+          "hiss",
+          0.9
+        ]
+      ]
+    },
+    {
+      "text": "So tonight, give your cat a slow blink. If it blinks back... you're officially family.",
+      "shot": "wide",
+      "host": {
+        "pose": "peace",
+        "face": "wink",
+        "look": "camera"
+      },
+      "cat": {
+        "action": "slow_blink",
+        "face": "host"
+      },
+      "sfx": [
+        [
+          "sparkle",
+          3.2
+        ]
+      ]
+    },
+    {
+      "text": "Follow for more cat secrets!",
+      "shot": "host",
+      "label": "FOLLOW FOR MORE!",
+      "host": {
+        "pose": "wave",
+        "face": "fang_grin",
+        "look": "camera"
+      },
+      "cat": {
+        "action": "sit",
+        "face": "camera"
+      },
+      "sfx": [
+        [
+          "ding",
+          1.0
+        ],
+        [
+          "meow",
+          1.4
+        ]
+      ]
+    }
+  ]
+}

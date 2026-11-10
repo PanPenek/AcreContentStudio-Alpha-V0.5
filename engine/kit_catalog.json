@@ -1,0 +1,362 @@
+{
+ "kits": [
+  {
+   "name": "dam",
+   "desc": "Massive dam across a narrow rocky valley. state: 'ancient' = Egyptian Sadd el-Kafara style rubble core with stepped limestone block facing, crest walkway, workers' ramp, stone piles, low reservoir behind; 'broken' = the same dam with a V-shaped breach, tumbled blocks and muddy flood water rushing through (animated); 'modern' = concrete gravity dam with crest road + railings, stepped spillway channel with animated white water, intake tower and a full reservoir. Downstream face toward camera.",
+   "params": {
+    "state": "ancient | broken | modern",
+    "height": "crest height m (default 3.7 ancient, 4 modern)",
+    "width": "valley width at the crest m (default 10)",
+    "valley": "rocky abutments both ends (default true)",
+    "water": "reservoir water (default true)",
+    "ramp": "workers' ramp + stone piles (ancient, default true)",
+    "terrain": "desert | green (abutment rock style)",
+    "seed": "int"
+   },
+   "size": [
+    13,
+    14,
+    4.5
+   ]
+  },
+  {
+   "name": "pyramid",
+   "desc": "Egyptian limestone pyramid: 'giza' (fine stepped courses, gold capstone), 'stepped' (Djoser-style 6 big tiers) or 'smooth' (white casing). Optional unfinished state with a construction ramp.",
+   "params": {
+    "style": "giza | stepped | smooth",
+    "base": "base width m (default 6)",
+    "height": "m (default ~0.68*base)",
+    "capstone": "gold tip (default true for giza/smooth)",
+    "built": "0..1 fraction finished (default 1)"
+   },
+   "size": [
+    6,
+    6,
+    4
+   ]
+  },
+  {
+   "name": "mudbrick_house",
+   "desc": "Egyptian / desert mud-brick house: thick walls with real door and small windows, flat roof with parapet, protruding palm-log beams, palm-frond awning on poles, outside stair to the roof, jars.",
+   "params": {
+    "plaster": "smooth mud plaster instead of bare bricks (default false)",
+    "width": "m (default 3.4)",
+    "depth": "m (default 2.8)",
+    "awning": "default true",
+    "stairs": "default true"
+   },
+   "size": [
+    5,
+    4.5,
+    2.9
+   ]
+  },
+  {
+   "name": "palm",
+   "desc": "Date palm: curved ringed trunk, drooping leaf-blade crown (pixel fronds), coconuts/dates. Fronds sway.",
+   "params": {
+    "height": "trunk height m (default 4.2)",
+    "lean": "trunk curve 0..0.4 (default 0.18)",
+    "count": "1-3 palms clump"
+   },
+   "size": [
+    3.6,
+    3.6,
+    5
+   ]
+  },
+  {
+   "name": "workers_camp",
+   "desc": "Ancient builders' camp: canvas tent, stacked limestone blocks, a wooden sled hauling a block with ropes, rope coil, water jars, tools on the ground.",
+   "params": {
+    "seed": "int"
+   },
+   "size": [
+    6,
+    5,
+    2
+   ]
+  },
+  {
+   "name": "water_mill",
+   "desc": "Water mill: stone base, timber+plaster mill house with gable roof, door/window, an overshot paddle wheel that ROTATES, wooden flume on posts with flowing water spilling onto the wheel, tail-race stream.",
+   "params": {
+    "roof": "roof_red | thatch | roof_grey",
+    "speed": "wheel speed (default 1)"
+   },
+   "size": [
+    5.5,
+    7,
+    4
+   ]
+  },
+  {
+   "name": "boat",
+   "desc": "Hollowed log boat (dugout) like the reference reel: bark-textured log hull with carved interior, plank seats, mast with orange 'S' sail on yard and boom, rigging, two oars. Bobs gently.",
+   "params": {
+    "sail": "default true",
+    "length": "m (default 4)",
+    "sail_color": "sail_s (default) | canvas | fabric_red"
+   },
+   "size": [
+    4.2,
+    1.0,
+    3.2
+   ]
+  },
+  {
+   "name": "dock",
+   "desc": "Wooden dock / jetty: plank deck on log posts, mooring bollards, ladder, rope coil.",
+   "params": {
+    "length": "m (default 4)"
+   },
+   "size": [
+    1.8,
+    4,
+    1.1
+   ]
+  },
+  {
+   "name": "house",
+   "desc": "Cosy village house (bakery by default, like the reference): clapboard walls on a stone footing, gable roof, brick chimney with rising smoke, door with frame, glazed windows, striped awning, sign board.",
+   "params": {
+    "style": "bakery | cottage",
+    "walls": "siding_grey | siding_white | plaster | planks | red_brick | stone_brick",
+    "roof": "roof_grey | roof_red | roof_blue | thatch",
+    "door_color": "#hex"
+   },
+   "size": [
+    5,
+    4.5,
+    4.6
+   ]
+  },
+  {
+   "name": "barn",
+   "desc": "Red farm barn like the reference: vertical red board walls with white trim, big double doors with white X braces, hay-loft door, side windows, steep gable roof (ridge front-to-back), hay bales.",
+   "params": {
+    "roof": "roof_grey | roof_red | roof_blue",
+    "open": "doors open showing the hay inside (default false)"
+   },
+   "size": [
+    5.5,
+    6.5,
+    5
+   ]
+  },
+  {
+   "name": "bridge",
+   "desc": "Bridge: 'stone' = arched limestone bridge with voussoir ring, parapets and ramps; 'wood' = log-beam plank bridge with posts and rails.",
+   "params": {
+    "style": "stone | wood",
+    "span": "m (default 4)"
+   },
+   "size": [
+    9,
+    2.2,
+    2.6
+   ]
+  },
+  {
+   "name": "well",
+   "desc": "Village stone well: round block wall, dark water inside, two posts with crossbeam, crank, little shingle roof, wooden bucket on a rope.",
+   "params": {
+    "roof": "roof_red | roof_grey | thatch"
+   },
+   "size": [
+    1.8,
+    1.8,
+    2.4
+   ]
+  },
+  {
+   "name": "cart",
+   "desc": "Wooden hand/ox cart: plank bed with side boards, two spoked wheels on an axle, shafts. Cargo optional. Wheels turn when moving=true.",
+   "params": {
+    "cargo": "hay | sacks | stones | crates | none (default sacks)",
+    "moving": "spin the wheels (default false)"
+   },
+   "size": [
+    2.6,
+    1.6,
+    1.4
+   ]
+  },
+  {
+   "name": "crates",
+   "desc": "Stack of wooden crates with dark frames and braces.",
+   "params": {
+    "count": "1-6 (default 4)"
+   },
+   "size": [
+    1.6,
+    1.0,
+    1.3
+   ]
+  },
+  {
+   "name": "barrel",
+   "desc": "Wooden barrels (bulged staves, iron hoops, lid).",
+   "params": {
+    "count": "1-3 (default 1)"
+   },
+   "size": [
+    0.7,
+    0.7,
+    0.9
+   ]
+  },
+  {
+   "name": "pot",
+   "desc": "Clay pottery: amphora, wide storage jar or bowl (terracotta).",
+   "params": {
+    "style": "amphora | jar | bowl",
+    "count": "1-4 (default 1)",
+    "mat": "clay (default) | ceramic_white | #hex"
+   },
+   "size": [
+    0.5,
+    0.5,
+    0.85
+   ]
+  },
+  {
+   "name": "tools",
+   "desc": "Builder's tools: shovel, pickaxe, wooden mallet/hammer - laid on the ground or leaning.",
+   "params": {
+    "tool": "all | shovel | pickaxe | hammer",
+    "lean": "shovel leans upright (default true)"
+   },
+   "size": [
+    1.4,
+    0.8,
+    1.1
+   ]
+  },
+  {
+   "name": "tent",
+   "desc": "A-frame canvas tent with ridge pole, open front flaps showing a dark inside, guy ropes and pegs.",
+   "params": {
+    "color": "canvas | fabric_red | fabric_blue | fabric_cream | #hex",
+    "length": "m (default 2.4)"
+   },
+   "size": [
+    2.6,
+    3,
+    1.7
+   ]
+  },
+  {
+   "name": "sign",
+   "desc": "Wooden signpost: post with a framed board and an arrow board (text not rendered).",
+   "params": {
+    "arrow": "extra arrow board (default true)",
+    "board": "planks_light | planks | #hex"
+   },
+   "size": [
+    1.0,
+    0.2,
+    1.8
+   ]
+  },
+  {
+   "name": "fence",
+   "desc": "Fence run along X: wooden post-and-rail (default) or white picket.",
+   "params": {
+    "length": "m (default 4)",
+    "style": "rail | picket"
+   },
+   "size": [
+    4,
+    0.2,
+    1.0
+   ]
+  },
+  {
+   "name": "rock",
+   "desc": "Chunky low-poly boulder cluster.",
+   "params": {
+    "size": "m (default 1.2)",
+    "style": "grey | desert | mossy"
+   },
+   "size": [
+    2,
+    1.6,
+    1.2
+   ]
+  },
+  {
+   "name": "campfire",
+   "desc": "Campfire: ring of stones, crossed logs, animated flickering flames, rising smoke, warm light.",
+   "params": {
+    "smoke": "default true",
+    "size": "scale (default 1)"
+   },
+   "size": [
+    1.0,
+    1.0,
+    0.8
+   ]
+  },
+  {
+   "name": "generic",
+   "desc": "Fallback for any other noun: composed from primitive parts you list (box/cyl/cone/ball/wedge with size, base-centre position 'at', rotation degrees and a texture name or #hex). No parts -> a tidy crate of the given 'mat' and 'size'.",
+   "params": {
+    "parts": "[{'shape':'box|cyl|cone|ball|wedge','size':[x,y,z] (or 'r','h'),'at':[x,y,z] base centre,'rot':[deg,deg,deg],'mat':'texture name or #hex'}]",
+    "mat": "texture for the no-parts crate",
+    "size": "crate size m (default 0.8)"
+   },
+   "size": [
+    1,
+    1,
+    1
+   ]
+  }
+ ],
+ "aliases": [
+  "adobe",
+  "amphora",
+  "ancient_dam",
+  "bakery",
+  "bonfire",
+  "boulder",
+  "box",
+  "broken_dam",
+  "camp",
+  "canoe",
+  "cask",
+  "concrete_dam",
+  "construction_camp",
+  "cottage",
+  "crate",
+  "date_palm",
+  "farm",
+  "fire",
+  "hammer",
+  "house_mudbrick",
+  "intact_dam",
+  "jar",
+  "jetty",
+  "log_boat",
+  "mill",
+  "modern_dam",
+  "mud_house",
+  "palm_tree",
+  "pickaxe",
+  "pier",
+  "pyramids",
+  "raft",
+  "rocks",
+  "ship",
+  "shop",
+  "shovel",
+  "signpost",
+  "spillway",
+  "stone",
+  "stone_blocks",
+  "tents",
+  "vase",
+  "wagon",
+  "watermill"
+ ]
+}

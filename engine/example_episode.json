@@ -1,0 +1,217 @@
+{
+ "id": "ep_example_water_mill",
+ "title": "How a water mill turns a river into flour",
+ "topic": "How a medieval water mill works: the wheel, the axle, the gears and the millstones.",
+ "format": "host_explainer",
+ "characters": {
+  "host": "astolfo_like"
+ },
+ "set": "forest",
+ "props": [
+  {
+   "id": "mill",
+   "describe": "a small wooden water mill with a big wooden water wheel on its side, stone base, shingled roof",
+   "at": "center",
+   "height": 1.7,
+   "yaw": -25
+  },
+  {
+   "id": "millstones",
+   "describe": "a pair of round grey stone millstones stacked on top of each other with a wooden spindle through the middle",
+   "at": "right",
+   "height": 0.6,
+   "yaw": -15
+  }
+ ],
+ "voice": {
+  "narrator": "en-US-AvaNeural",
+  "rate": "+4%",
+  "pitch": "+12Hz"
+ },
+ "music": {
+  "bpm": 104,
+  "seed": 21,
+  "key": 62,
+  "volume": 1.0
+ },
+ "render": {
+  "res": "540x960",
+  "samples": 8
+ },
+ "sources": [
+  "Reynolds, T. S. (1983). Stronger than a Hundred Men: A History of the Vertical Water Wheel. Johns Hopkins University Press",
+  "Domesday Book (1086) records about 5,600 water mills in England"
+ ],
+ "beats": [
+  {
+   "text": "Hi hi! This little house can turn a river into bread. No electricity. At all!",
+   "shot": "wide",
+   "title": "A RIVER THAT MAKES BREAD",
+   "host": {
+    "pose": "wave",
+    "face": "happy",
+    "look": "camera"
+   },
+   "prop": {
+    "mill": "appear"
+   },
+   "sfx": [
+    [
+     "pop",
+     0.3
+    ]
+   ]
+  },
+  {
+   "text": "It's a water mill, and people used them for over two thousand years. Let me show you how it works!",
+   "shot": "two",
+   "host": {
+    "pose": "point_right",
+    "face": "fang_grin",
+    "look": "mill"
+   }
+  },
+  {
+   "text": "Step one. The wheel. River water pushes the paddles, and the whole wheel turns. Round and round, all day long.",
+   "shots": [
+    "card",
+    "prop"
+   ],
+   "card": "THE WHEEL",
+   "focus": "mill",
+   "prop": {
+    "mill": "wiggle"
+   },
+   "host": {
+    "pose": "explain",
+    "face": "smile",
+    "look": "mill"
+   },
+   "label": "WATER PUSHES PADDLES",
+   "sfx": [
+    [
+     "whoosh",
+     0
+    ]
+   ]
+  },
+  {
+   "text": "Water is heavy, so even a slow stream carries a lot of power.",
+   "shot": "host",
+   "host": {
+    "pose": "think",
+    "face": "thinking",
+    "look": "camera"
+   }
+  },
+  {
+   "text": "Step two. The axle. The wheel sits on a thick wooden shaft that goes right inside the mill.",
+   "shots": [
+    "card",
+    "prop_close"
+   ],
+   "card": "THE AXLE",
+   "host": {
+    "pose": "point_right",
+    "face": "smile",
+    "look": "mill"
+   },
+   "label": "WHEEL SPINS A SHAFT",
+   "sfx": [
+    [
+     "whoosh",
+     0
+    ]
+   ]
+  },
+  {
+   "text": "Inside, wooden gears turn that sideways spin into an upright one, and speed it up.",
+   "shot": "two",
+   "host": {
+    "pose": "explain",
+    "face": "happy",
+    "look": "mill"
+   },
+   "sfx": [
+    [
+     "blip",
+     1.0
+    ]
+   ]
+  },
+  {
+   "text": "Step three. The millstones! Two huge round stones. The bottom one stays still, the top one spins.",
+   "shots": [
+    "card",
+    "prop"
+   ],
+   "card": "MILLSTONES",
+   "focus": "millstones",
+   "prop": {
+    "millstones": "appear"
+   },
+   "host": {
+    "pose": "point_right",
+    "face": "surprised",
+    "look": "millstones"
+   },
+   "label": "TOP STONE SPINS",
+   "sfx": [
+    [
+     "pop",
+     0.2
+    ]
+   ]
+  },
+  {
+   "text": "Pour grain in the middle hole, and it gets crushed between them into flour.",
+   "shot": "prop_close",
+   "prop": {
+    "millstones": "spin"
+   },
+   "host": {
+    "pose": "idle",
+    "face": "smile",
+    "look": "millstones"
+   },
+   "sfx": [
+    [
+     "sparkle",
+     1.2
+    ]
+   ]
+  },
+  {
+   "text": "Back in ten eighty six, England's Domesday Book counted over five thousand of these mills!",
+   "shot": "wide",
+   "focus": "mill",
+   "host": {
+    "pose": "cheer",
+    "face": "fang_grin",
+    "look": "camera"
+   },
+   "label": "5,600 MILLS IN 1086",
+   "sfx": [
+    [
+     "ding",
+     0.4
+    ]
+   ]
+  },
+  {
+   "text": "River, wheel, gears, stones, bread. Follow for more old tech that still feels like magic!",
+   "shot": "host",
+   "host": {
+    "pose": "peace",
+    "face": "wink",
+    "look": "camera"
+   },
+   "sfx": [
+    [
+     "heart",
+     1.5
+    ]
+   ]
+  }
+ ]
+}

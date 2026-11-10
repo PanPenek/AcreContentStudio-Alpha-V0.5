@@ -1,0 +1,8 @@
+node_modules/
+workspace/
+assets/
+tools/Ming-3.0-tts/
+tools/models/
+__pycache__/
+*.blend1
+selftest/

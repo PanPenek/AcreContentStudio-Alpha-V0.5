@@ -1,0 +1,19 @@
+{
+  "name": "acre-content-studio",
+  "productName": "Acre Content Studio",
+  "version": "0.5.0",
+  "description": "Acre Content Studio: AI + Blender pipeline for cute pixel-3D anime explainer shorts (ideas, scripts, characters, render, compose, Overseer, automations).",
+  "main": "src/main/main.js",
+  "author": "Patryk",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "start:debug": "electron . --remote-debugging-port=9334",
+    "start:hidden": "electron . --start-hidden --remote-debugging-port=9334",
+    "selftest": "electron . --selftest"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0"
+  }
+}

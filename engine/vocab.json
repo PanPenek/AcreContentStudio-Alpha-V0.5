@@ -1,0 +1,360 @@
+{
+ "_comment": "Staging vocabulary the script writer may use. Keep in sync with engine/blender/abs_poses.py, abs_cat.py, abs_sets.py, scene.py (prop actions), engine/audio.py.",
+ "host_poses": [
+  "idle",
+  "hip",
+  "peace",
+  "wave",
+  "point_left",
+  "point_right",
+  "point_down_right",
+  "explain",
+  "think",
+  "cheer",
+  "surprised",
+  "laugh",
+  "pet_right",
+  "pet_front",
+  "slow_blink",
+  "hands_together"
+ ],
+ "host_faces": [
+  "neutral",
+  "smile",
+  "happy",
+  "fang_grin",
+  "wink",
+  "surprised",
+  "sad",
+  "angry",
+  "thinking",
+  "slow_blink",
+  "soft"
+ ],
+ "host_look": [
+  "camera",
+  "<prop id>",
+  "cat",
+  "<degrees: positive turns toward screen-right>"
+ ],
+ "prop_actions": [
+  "appear",
+  "hide",
+  "show",
+  "spin",
+  "bob",
+  "wiggle",
+  "still"
+ ],
+ "cat_actions": [
+  "sit",
+  "slow_blink",
+  "walk",
+  "trot",
+  "stand",
+  "headbutt",
+  "knead",
+  "loaf",
+  "belly_up",
+  "belly_trap",
+  "ears_back",
+  "puff",
+  "groom",
+  "sleep"
+ ],
+ "cat_face": [
+  "camera",
+  "host",
+  "<degrees yaw>"
+ ],
+ "cat_palettes": [
+  "orange",
+  "grey",
+  "black",
+  "calico"
+ ],
+ "sets": {
+  "forest": {
+   "anchors": [
+    "host",
+    "center",
+    "left",
+    "right",
+    "back",
+    "front",
+    "dock",
+    "shore",
+    "boat",
+    "water"
+   ],
+   "shots": [
+    "wide",
+    "host",
+    "host_full",
+    "two",
+    "prop",
+    "prop_close",
+    "card",
+    "ots",
+    "low",
+    "host_low",
+    "ecu",
+    "top",
+    "side",
+    "orbit",
+    "establish",
+    "reverse"
+   ],
+   "notes": "Sunny forest clearing with pine trees and a stream behind the action area. Host stands at 'host' (left). Props stand on anchors: center (main spot, right of the host), left, right, back (by the stream), front."
+  },
+  "studio": {
+   "anchors": [
+    "host",
+    "center",
+    "left",
+    "right",
+    "back",
+    "front"
+   ],
+   "shots": [
+    "wide",
+    "host",
+    "host_full",
+    "two",
+    "prop",
+    "prop_close",
+    "card",
+    "ots",
+    "low",
+    "host_low",
+    "ecu",
+    "top",
+    "side",
+    "orbit",
+    "establish",
+    "reverse"
+   ],
+   "notes": "Plain warm cream backdrop. Use when the topic has no natural place, or to showcase objects/inventions. Same anchors as forest."
+  },
+  "cozy_room": {
+   "anchors": [
+    "host",
+    "center",
+    "left",
+    "right",
+    "back",
+    "front",
+    "bench_edge",
+    "bench_left",
+    "bench_mid",
+    "bench_right",
+    "floor_front",
+    "floor_right",
+    "bench_offleft",
+    "bench_offright"
+   ],
+   "shots": [
+    "wide",
+    "host",
+    "host_full",
+    "two",
+    "prop",
+    "prop_close",
+    "card",
+    "cat",
+    "cat_low",
+    "ots",
+    "low",
+    "host_low",
+    "ecu",
+    "top",
+    "side",
+    "orbit"
+   ],
+   "notes": "Cozy room: host stands left of a window seat. Props stand on center/left/right (floor) or back (on the window seat). Only if the episode has the cat: the cat lives on the window seat (bench_*); 'cat', 'cat_low' follow it, 'two' frames host + bench_edge, pet_front + look 88 strokes a cat at bench_edge."
+  },
+  "kitchen": {
+   "anchors": [
+    "host",
+    "center",
+    "left",
+    "right",
+    "back",
+    "front"
+   ],
+   "shots": [
+    "wide",
+    "host",
+    "host_full",
+    "two",
+    "prop",
+    "prop_close",
+    "card",
+    "ots",
+    "low",
+    "host_low",
+    "ecu",
+    "top",
+    "side",
+    "orbit",
+    "establish",
+    "reverse"
+   ],
+   "notes": "Bright home kitchen (counter, sink, stove, fridge, window). Cooking, food science, chemistry at home, everyday stuff."
+  },
+  "classroom": {
+   "anchors": [
+    "host",
+    "center",
+    "left",
+    "right",
+    "back",
+    "front"
+   ],
+   "shots": [
+    "wide",
+    "host",
+    "host_full",
+    "two",
+    "prop",
+    "prop_close",
+    "card",
+    "ots",
+    "low",
+    "host_low",
+    "ecu",
+    "top",
+    "side",
+    "orbit",
+    "establish",
+    "reverse"
+   ],
+   "notes": "School classroom with a big green chalkboard, teacher desk, bookshelf. Maths, language, history lessons, study tips, 'did you know' facts."
+  },
+  "park": {
+   "anchors": [
+    "host",
+    "center",
+    "left",
+    "right",
+    "back",
+    "front"
+   ],
+   "shots": [
+    "wide",
+    "host",
+    "host_full",
+    "two",
+    "prop",
+    "prop_close",
+    "card",
+    "ots",
+    "low",
+    "host_low",
+    "ecu",
+    "top",
+    "side",
+    "orbit",
+    "establish",
+    "reverse"
+   ],
+   "notes": "City park lawn with a path, bench, lamp post, round trees, blue sky. Outdoor everyday topics, sports, weather, animals in town, people."
+  },
+  "desert": {
+   "anchors": [
+    "host",
+    "center",
+    "left",
+    "right",
+    "back",
+    "front",
+    "river",
+    "wadi",
+    "ruins",
+    "village"
+   ],
+   "shots": [
+    "wide",
+    "host",
+    "host_full",
+    "two",
+    "prop",
+    "prop_close",
+    "card",
+    "ots",
+    "low",
+    "host_low",
+    "ecu",
+    "top",
+    "side",
+    "orbit",
+    "establish",
+    "reverse"
+   ],
+   "notes": "Sunny desert with sand dunes and distant pyramids. Ancient history (Egypt, Mesopotamia), deserts, heat, survival, archaeology."
+  }
+ },
+ "sfx": [
+  "whoosh",
+  "pop",
+  "sparkle",
+  "blip",
+  "ding",
+  "boing",
+  "heart",
+  "bonk",
+  "zap",
+  "type",
+  "meow",
+  "meow_short",
+  "trill",
+  "purr",
+  "hiss"
+ ],
+ "voices": [
+  "en-US-AvaNeural",
+  "en-US-AnaNeural",
+  "en-US-JennyNeural",
+  "en-US-AriaNeural",
+  "en-US-EmmaMultilingualNeural",
+  "en-GB-SoniaNeural",
+  "en-US-AndrewNeural",
+  "en-US-GuyNeural"
+ ],
+ "beat_fields": {
+  "text": "narration line (host speaks it). Required.",
+  "shot": "one shot name, or use 'shots': [a, b] to split the beat",
+  "host": "{pose, face, look}",
+  "focus": "prop id that prop/prop_close/two/card shots frame from this beat on (default: first prop)",
+  "prop": "{\"<prop id>\": action} actions starting this beat: appear (pops in; it is hidden before), hide, show, spin, bob, wiggle, still",
+  "cat": "only with the cat: {action, at (anchor, teleports - only on a cut), to (anchor, walks there), speed, face, head, trap_at}",
+  "card": "BIG title text shown at the start of the beat (2-3 words, caps)",
+  "label": "short caption box under the subtitles for the whole beat (<= 24 chars)",
+  "title": "opening title (first beat only)",
+  "sfx": "list of name or [name, seconds_after_beat_start]",
+  "pause_after": "extra silence in seconds"
+ },
+ "episode_fields": {
+  "set": "one of the sets above (pick what fits the topic)",
+  "props": "list of things to show. Generated 3D object: {\"id\": \"mill\", \"describe\": \"visual description of ONE object for an image generator\", \"at\": anchor, \"height\": metres (host is 1.55), \"yaw\": degrees}. The procedural cat is the string \"cat\" (only for cat topics). Max 4 generated props.",
+  "cat_palette": "only if props contains \"cat\""
+ },
+ "shot_notes": {
+  "wide": "stage + host + main prop",
+  "host": "medium close-up of the host",
+  "host_full": "full body host",
+  "two": "host and the focused prop",
+  "prop": "focused prop",
+  "prop_close": "tight on the focused prop",
+  "card": "focused prop from a high 3/4 angle",
+  "ots": "over the host's shoulder onto the focused prop (host looks at it)",
+  "low": "worm's-eye low angle up at host + prop (dramatic, scale)",
+  "host_low": "low angle on the host (confident moments)",
+  "ecu": "extreme close-up of the host's face (reactions, punchlines)",
+  "top": "top-down map view of the focused prop - use with beat arrows for physics/flow explanations",
+  "side": "profile view of the focused prop (cross-sections, flow through it)",
+  "orbit": "slow arc around the focused prop (reveals)",
+  "establish": "high far shot of the whole environment (openers, location changes)",
+  "reverse": "from behind the stage looking back at the host"
+ }
+}
